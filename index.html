@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,102 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1 class="bg-primary">Hello World</h1>
+    <!-- header section start -->
+    <header>
+        <!-- Nav Start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid ">
+                <a class="navbar-brand ms-5" href="#"> 
+                    <img style="width:300px;" src="images/logo/logo.png" alt=""> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav fw-bold">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Product</a>
+                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- nav end -->
+        <!-- Banner Start -->
+        <div>
+            <div style="background-color: #f0ebca;" class="row d-flex align-items-center p-5">
+                <div class="col-md-7">
+                    <h1>BE THE PENGUIN <br> OF WINTER</h1> 
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="btn btn-warning">BUY NOW</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="images/banner.png" class="d-block w-100" alt="A banner image-tv ">
+                </div>
+            </div>
+        </div>
+        <!-- Banner End -->
+    </header>
+    <!-- header section end -->
+    <!-- Main section start -->
+    <main class="container">
+        <section id="shoes" class="container mt-5">
+            <h1>WOMAN JACKET</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                <div class="col">
+                    <div class="card panda-card h-100 shadow">
+                        <img src="images/yellow-jacket.png" class="card-img-top" alt="Yellow Jacket">
+                        <div class="card-body">
+                            <h5 class="card-title">Supply 350</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional.</p>
+                            <h5>$120</h5>
+
+                        </div>
+                        <div class="card-footer panda-card-footer">
+                            <a href="#" class="btn btn-primary">Buy Now >></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card panda-card h-100 shadow ">
+                        <img src="images/ladies-jacket.png" class="card-img-top" alt="ladies Jacket">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike 360</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <h5>$320</h5>
+                        </div>
+                        <div class="card-footer panda-card-footer">
+                            <a href="#" class="btn btn-primary">Buy Now >></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card panda-card h-100 shadow ">
+                        <img src="images/red-jacket.png" class="card-img-top" alt="red jacket">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Airmax</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional.</p>
+                            <h5>$350</h5>
+                        </div>
+                        <div class="card-footer panda-card-footer">
+                            <a href="#" class="btn btn-primary">Buy Now >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

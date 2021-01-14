@@ -1,5 +1,5 @@
 body{
-    font-family: 'Poppins', sans-serif;
+     font-family: 'Poppins', sans-serif; /* this is a external font */
 }
 header{
     background-color: rgb(255, 251, 240);
@@ -8,7 +8,7 @@ p{
     font-size: 15px;
     font-weight: bold;
 }
-.btn{
+.btn{                                     /*Design for button*/
     color: white;
     background-color: rgb(156, 181, 59);
     padding: 0 30px;
@@ -101,7 +101,7 @@ p{
         width: 40%;
         height: 200px;
 }
-
+/*Media Quary for responsive*/
 @media(max-width:668px){
     .our-service-image img{
         height: 300px;

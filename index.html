@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- header section start -->
-    <header class="container">
+    <header class="container-fluid">
         <!-- Nav Start -->
-        <nav style="background-color: #f0ebca;" class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid ">
-                <a class="navbar-brand ms-5" href="#">
+        <nav class="container navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid d-flex justify-content-right">
+                <a class="navbar-brand " href="#">
                     <img style="width:300px;" src="images/logo/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,7 +28,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav fw-bold  ">
+                    <div class="navbar-nav fw-bold">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#">Product</a>
                         <a class="nav-link" href="#">About us</a>
@@ -38,13 +40,14 @@
         <!-- nav end -->
         <!-- Banner Start -->
         <div class="container">
-            <div style="background-color: #f0ebca;" class="row d-flex align-items-center p-5">
-                <div class="col-md-7">
-                    <h1>BE THE PENGUIN <br> OF WINTER</h1>
+            <div class="row d-flex align-items-center p-5">
+                <div class="col-md-6 banner-box1">
+                    <h1 class="font-weight-bold"><span id="penguin-text">BE THE PENGUINS</span> <br> <span
+                            id="winter-text">OF WINTER</span></h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <button class="btn btn-warning"><i class="fas fa-shopping-cart"></i> BUY NOW</button>
+                    <button class="btn"><i class="fas fa-shopping-cart"></i> BUY NOW</button>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <img src="images/banner.png" class="d-block w-100" alt="A banner image-tv ">
                 </div>
             </div>
@@ -55,42 +58,54 @@
     <!-- Main section start -->
     <main class="container">
         <!-- Woman jacket section start -->
-        <section id="shoes" class="container mt-5">
-            <h1>WOMAN JACKET</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4 ">
-                <div class="col">
-                    <div class="card panda-card h-100 shadow">
-                        <img src="images/yellow-jacket.png" class="card-img-top" alt="Yellow Jacket">
-                        <div class="card-body">
-                            <h5 class="card-title">Yellow Coat Jacket</h5>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the 
+        <section id="woman-jecket" class="container mt-5">
+            <h1 class="fw-bold">WOMAN JACKET</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 ">
+                <div class=" col-md-4">
+                    <div class="card penguin-card h-80 shadow pb-2">
+                        <div class="p-4 m-3 penguin-img-bg product_item">
+                            <img class="card-img-top" src="images/yellow-jacket.png" alt="Jacket">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h3 class="card-title fw-bold fs-4 t-color">Yellow Coat Jacket</h3>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the
                                 printing and typesetting industry.</p>
-                            <h5>$120</h5>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> BUY NOW</a>
+                        </div>
+                        <div class="card-footer bg-transparent penguin-card-footer d-flex align-items-center justify-content-between ">
+                            <h3 class="text-orange-color fw-bold fs-2">$234</h3>
+                            <a href="#" class="btn text-uppercase px-4 py-3"><i class="fa fa-shopping-cart me-2"></i> Buy Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card panda-card h-100 shadow ">
-                        <img src="images/ladies-jacket.png" class="card-img-top" alt="ladies Jacket">
-                        <div class="card-body">
-                            <h5 class="card-title">Ladies Jacket</h5>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the 
+                <div class=" col-md-4">
+                    <div class="card penguin-card h-80 shadow pb-2">
+                        <div id="ladies-jacket" class="p-4 m-3 penguin-img-bg product_item">
+                            <img class="card-img-top" src="images/ladies-jacket.png" alt="Jacket">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h3 class="card-title fw-bold fs-4 t-color">Ladies Jacket </h3>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the
                                 printing and typesetting industry.</p>
-                            <h5>$320</h5>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> BUY NOW</a>
+                        </div>
+                        <div class="card-footer bg-transparent penguin-card-footer d-flex align-items-center justify-content-between ">
+                            <h3 class="text-orange-color fw-bold fs-2">$234</h3>
+                            <a href="#" class="btn text-uppercase px-4 py-3"><i class="fa fa-shopping-cart me-2"></i> Buy Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card panda-card h-100 shadow ">
-                        <img src="images/red-jacket.png" class="card-img-top" alt="red jacket">
-                        <div class="card-body">
-                            <h5 class="card-title">Woman Leather Jacket</h5>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the 
+                <div class=" col-md-4">
+                    <div class="card penguin-card h-80 shadow pb-2">
+                        <div id="red-img" class="p-4 m-3 penguin-img-bg product_item">
+                            <img class="card-img-top" src="images/red-jacket.png" alt="Jacket">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h3 class="card-title fw-bold fs-4 t-color">Woman Leather Jacket</h3>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the
                                 printing and typesetting industry.</p>
-                            <h5>$350</h5>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> BUY NOW</a>
+                        </div>
+                        <div class="card-footer bg-transparent penguin-card-footer d-flex align-items-center justify-content-between ">
+                            <h3 class="text-orange-color fw-bold fs-2">$234</h3>
+                            <a href="#" class="btn text-uppercase px-4 py-3"><i class="fa fa-shopping-cart me-2"></i> Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -99,42 +114,54 @@
         <!-- woman jacket section end -->
 
         <!-- man jacket section start  -->
-        <section id="man-jacket" class="container mt-5">
-            <h1>MAN JACKET</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4 ">
-                <div class="col">
-                    <div class="card panda-card h-100 shadow">
-                        <img src="images/Snowboard-Jacket.png" class="card-img-top" alt="Snowboard-Jacket">
-                        <div class="card-body">
-                            <h5 class="card-title">Snowboard Jacket Mens</h5>
+        <section id="man-jecket" class="container mt-5">
+            <h1 class="fw-bold">MAN JACKET</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                <div class=" col-md-4">
+                    <div class="card penguin-card h-80 shadow pb-2">
+                        <div id="snowboard-jacket" class="p-4 m-3 penguin-img-bg product_item">
+                            <img class="card-img-top" src="images/Snowboard-Jacket.png" alt="Jacket">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h3 class="card-title fw-bold fs-4 t-color">Snowboard Jacket Mens</h3>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the
                                 printing and typesetting industry.</p>
-                            <h5>$120</h5>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> BUY NOW</a>
+                        </div>
+                        <div class="card-footer bg-transparent penguin-card-footer d-flex align-items-center justify-content-between ">
+                            <h3 class="text-orange-color fw-bold fs-2">$234</h3>
+                            <a href="#" class="btn text-uppercase px-4 py-3"><i class="fa fa-shopping-cart me-2"></i> Buy Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card panda-card h-100 shadow ">
-                        <img src="images/Man-Leather.png" class="card-img-top" alt="Man Leather Jackets">
-                        <div class="card-body">
-                            <h5 class="card-title">Man Leather Jackets</h5>
+                <div class=" col-md-4">
+                    <div class="card penguin-card h-80 shadow pb-2">
+                        <div class="p-4 m-3 penguin-img-bg product_item">
+                            <img class="card-img-top" src="images/Man Leather-Jackets.png" alt="Jacket">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h3 class="card-title fw-bold fs-4 t-color">Man Leather Jackets</h3>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the
                                 printing and typesetting industry.</p>
-                            <h5>$220</h5>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> BUY NOW</a>
+                        </div>
+                        <div class="card-footer bg-transparent penguin-card-footer d-flex align-items-center justify-content-between ">
+                            <h3 class="text-orange-color fw-bold fs-2">$234</h3>
+                            <a href="#" class="btn text-uppercase px-4 py-3"><i class="fa fa-shopping-cart me-2"></i> Buy Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card panda-card h-100 shadow ">
-                        <img src="images/Man-Casual .png" class="card-img-top" alt="Man Casual Jackets">
-                        <div class="card-body">
-                            <h5 class="card-title">Man Casual Jackets</h5>
-                            <p class="card-text">TLorem Ipsum is simply dummy text of the
+                <div class=" col-md-4">
+                    <div class="card penguin-card h-80 shadow pb-2">
+                        <div id="casual-jacket" class="p-4 m-3 penguin-img-bg product_item">
+                            <img class="card-img-top" src="images/Man-Casual .png" alt="Jacket">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h3 class="card-title fw-bold fs-4 t-color">Man Casual Jackets</h3>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the
                                 printing and typesetting industry.</p>
-                            <h5>$159</h5>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> BUY NOW</a>
+                        </div>
+                        <div class="card-footer bg-transparent penguin-card-footer d-flex align-items-center justify-content-between ">
+                            <h3 class="text-orange-color fw-bold fs-2">$234</h3>
+                            <a href="#" class="btn text-uppercase px-4 py-3"><i class="fa fa-shopping-cart me-2"></i> Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -142,67 +169,82 @@
         </section>
         <!-- man jacket section end -->
         <!-- Our service section start  -->
-        <section class="container mt-5">
-                <div class="row d-flex align-items-center p-5">
-                    <div class="col-md-5">
-                        <div class="shadow p-3 mb-5 bg-white rounded">
-                            <img src="images/logo/image 12.png" alt="">
-                            <h3>Find the Perfect Fit</h3>
-                            <p>Everybody is different, which is why we
-                                offer styles for every body.</p>
+        <section class="container service-section">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="shadow d-flex align-items-center p-3 mb-4 bg-white rounded">
+                        <div class="me-4">
+                            <img width="75" src="images/logo/image 12.png" alt="logo">
                         </div>
-                        <div class="shadow p-3 mb-5 bg-white rounded">
-                            <img src="images/logo/image 13.png" alt="">
-                            <h3>Free Exchanges</h3>
-                            <p>One of the many reasons you can shop
-                                with peace of mind.</p>
-                        </div>
-                        <div class="shadow p-3 mb-5 bg-white rounded">
-                            <img src="images/logo/image 14.png" alt="">
-                            <h3>Contact Our Seller</h3>
-                            <p>They are here to help you. That's quite 
-                                literally what we pay them for.</p>
+                        <div class="ms-3">
+                            <h3 class="fw-bold t-color fs-4 mb-4">Find the Perfect Fit</h3>
+                        <p>Everybody is different, which is why we
+                            offer styles for every body.</p>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <img src="images/logo/XMLID 1.png" class="d-block w-100" alt="A banner image-tv ">
+                    <div class="shadow d-flex align-items-center p-3 mb-4 bg-white rounded">
+                        <div class="me-4">
+                            <img width="75" src="images/logo/image 13.png" alt="logo">
+                        </div>
+                        <div class="ms-3">
+                            <h3 class="fw-bold t-color fs-4 mb-4">Free Exchanges</h3>
+                        <p>One of the many reasons you can shop
+                            with peace of mind.</p>
+                        </div>
+                    </div>
+                    <div class="shadow d-flex align-items-center p-3 mb-4 bg-white rounded">
+                        <div class="me-4">
+                            <img width="75" src="images/logo/image 14.png" alt="logo">
+                        </div>
+                        <div class="ms-3">
+                            <h3 class="fw-bold t-color fs-4 mb-4">Contact Our Seller</h3>
+                        <p>They are here to help you. That's quite 
+                            literally what we pay them for.</p>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <img src="images/logo/XMLID 1.png" class="d-block w-100" alt="A banner image-tv ">
+                </div>
+            </div>
         </section>
         <!-- Our service section end -->
         <!-- Contact section start -->
         <section class="container contact-us d-flex justify-content-around">
-                <div class="col-md-4 envelope-icone">
-                    <img src="images/mail-icon.png" alt="">
-                    <h5>If you have question or just went to get tuch, use the form below.We look forward to hearing from you</h5>
+            <div class="col-md-4 envelope-icone">
+                <img src="images/mail-icon.png" alt="">
+                <h5>If you have question or just went to get tuch, use the form below.We look forward to hearing from
+                    you</h5>
+            </div>
+            <div class="col-md-8">
+                <h1>Contact Us</h1>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
                 </div>
-                <div class="col-md-8">
-                        <h1>Contact Us</h1>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Feedback" rows="3"></textarea>
-                          </div>
-                          <div>
-                              <button class="btn btn-primary">Send</button>
-                          </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
                 </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Feedback"
+                        rows="3"></textarea>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Send</button>
+                </div>
+            </div>
         </section>
         <!-- Contact section end -->
 
-    </main> 
+    </main>
     <!-- main section end -->
     <!-- footer section start -->
-        <footer class="container text-center mt-5">
-            <small>©2021. Penguin Fashion. All rights reserved. Hasib, Dhaka.</small>
-        </footer>
+    <footer class="container text-center mt-5">
+        <small>©2021. Penguin Fashion. All rights reserved. Hasib, Dhaka.</small>
+    </footer>
     <!-- footer section end  -->
 
 

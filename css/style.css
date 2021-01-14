@@ -1,5 +1,73 @@
-.navbar-title{
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: rgb(255, 251, 240);
+}
+p{
+    font-size: 15px;
     
+}
+.btn{
+    color: white;
+    background-color: rgb(156, 181, 59);
+    padding: 0 30px;
+    
+}
+.banner-box1{
+    margin-bottom: 200px;
+}
+#penguin-text{
+    color: rgb(238, 182, 40);
+    font-size: 60px;
+    font-weight: bold;
+}
+#winter-text{
+    color: rgb(53, 61, 87);
+    font-size: 60px;
+    font-weight: bold;
+}
+.t-color{
+    color: rgb(54, 57, 89);;
+}
+.penguin-card{
+    border: 0;
+}
+.penguin-card-footer{
+    border: 0;
+}
+.text-orange-color{
+    color: rgb(233, 184, 50);
+}
+.penguin-img-bg{
+   background-color: #F1F1F1;
+   border-radius:15px ;
+}
+#ladies-jacket img{
+    width: 91%;
+    padding: 2% 2% 2% 17%;
+}
+#casual-jacket img{
+    width: 87%;
+    padding-left: 15%;
+}
+#snowboard-jacket img{
+    width: 89%;
+    padding-left: 10%;
+}
+#red-img img {
+    width: 90%;
+    padding-left: 8%;
+}
+.card-img-top {
+    transition: .5s ;
+}
+.product_item:hover .card-img-top {
+    transform: scale(1.1);
+}
+.service-section{
+    margin-top: 100px;
+    border:0;
 }
 .envelope-icone{
         background-color:gray;
